@@ -1,0 +1,19 @@
+{
+  "channels": [
+    {
+      "name": "Data Science",
+      "id": "47145"
+    },
+    {
+      "name": "Programming",
+      "id": "21149"
+    }
+  ],
+  "login": [
+    {
+      "username": "user",
+      "password": "test",
+      "id": "123"
+    }
+  ]
+}
