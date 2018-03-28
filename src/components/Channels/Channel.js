@@ -6,6 +6,7 @@ import { fecthChannel } from '../../reducers/channelReducer'
 //import { Link } from 'react-router-dom'
 
 import Filter from '../Filter'
+import PostList from '../posts/PostList'
 
 class Channel extends Component {
 
@@ -15,19 +16,19 @@ class Channel extends Component {
 
   render() {
     let { channel } = this.props
+    let { posts } = channel
+
+    if ( !posts ) {
+      return (
+        <p>Loading...</p>
+      )
+    }
 
     return (
       <div>
         <h2>{channel.name}</h2>
         <Filter />
-        {/* {this.props.visiblePosts.map(channel =>
-          <li key={channel.id} >
-            {console.log(channel)}
-            <div>
-              {channel.name}
-            </div>
-          </li>
-        )} */}
+        <PostList />
       </div>
     )
   }

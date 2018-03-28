@@ -2,11 +2,45 @@
   "channels": [
     {
       "name": "Data Science",
-      "id": "47145"
+      "id": "47145",
+      "posts": [
+        {
+          "name": "Learn Python for Data Science",
+          "type": "website",
+          "id": "92834",
+          "content": "python"
+        },
+        {
+          "name": "Data Vizualisation",
+          "type": "event",
+          "id": "90384",
+          "content": "visu"
+        }
+      ]
     },
     {
       "name": "Programming",
-      "id": "21149"
+      "id": "21149",
+      "posts": [
+        {
+          "name": "Learn Python for Data Science",
+          "type": "website",
+          "id": "92834",
+          "content": "python"
+        },
+        {
+          "name": "Python 101",
+          "type": "event",
+          "id": "203904",
+          "content": "python"
+        },
+        {
+          "name": "React workshop",
+          "type": "event",
+          "id": "84920",
+          "content": "react"
+        }
+      ]
     }
   ],
   "login": [

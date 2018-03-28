@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { filterType } from '../reducers/postReducer'
 
 class Today extends Component {
 
@@ -13,11 +14,21 @@ class Today extends Component {
   }
 }
 
-const mapDispatchToProps = {
+const mapStateToProps = (state) => {
+  return {
+    events: state.channels.posts
+  }
+}
 
+const mapDispatchToProps = (dispatch) => {
+  return {
+    getChannel: () => {
+      dispatch(filterType('event'))
+    }
+  }
 }
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(Today)
