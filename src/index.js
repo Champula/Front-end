@@ -5,6 +5,7 @@ import './index.css'
 import routes from './routes'
 import store, { initApp } from './store'
 import registerServiceWorker from './registerServiceWorker'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 store.dispatch(initApp())
 

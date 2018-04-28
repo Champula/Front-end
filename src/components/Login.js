@@ -25,7 +25,7 @@ const LoginForm = (props) => (
           onChange={props.handleChange}
         />
       </div>
-      <button type='submit'>Login</button>
+      <button className="btn btn-info" type='submit'>Login</button>
     </form>
   </div>
 )

@@ -8,20 +8,7 @@ import Filter from '../Filter'
 class ChannelList extends Component {
 
   render() {
-    return (
-      <div>
-        <h2>Channels</h2>
-        <Filter />
-        {this.props.visibleChannels.map(channel =>
-          <li key={channel.name} >
-            <Link to={{
-              pathname: `/channels/${channel.name.replace(/\s/g,'')}`,
-              params: channel.id
-            }} >{channel.name}</Link>
-          </li>
-        )}
-      </div>
-    )
+
   }
 }
 
